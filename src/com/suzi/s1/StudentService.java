@@ -29,4 +29,29 @@ public class StudentService {
 
 		return student;
 	}
+	
+	public void addPoint(Student [] student) {
+		Scanner sc = new Scanner(System.in);
+		for(int i=0; i<student.length;i++) { // length 학생의 수만큼
+		
+			Student s = new Student();
+			System.out.println("국어점수를 입력해주세요");
+			student[i].kor = sc.nextInt();
+			System.out.println("영어점수를 입력해주세요");
+			student[i].eng = sc.nextInt();
+			System.out.println("수학점수를 입력해주세요");
+			student[i].math = sc.nextInt();
+			student[i].total = (student[i].kor +student[i].eng +student[i].math);
+			student[i].avg = student[i].total/3.0;
+			
+			student[i] = s;
+		
+		}
+		
+	}
+
+
+	
+	//매서드명은 addPoint
+	//내용 : 각 학생의 점수 입력
 }
