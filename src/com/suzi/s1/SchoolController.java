@@ -2,6 +2,8 @@ package com.suzi.s1;
 
 import java.util.Scanner;
 
+
+
 public class SchoolController {
 	//매서드명은 start
 	//리턴은 x
@@ -16,27 +18,33 @@ public class SchoolController {
 		Scanner sc = new Scanner(System.in);
 		boolean check = true;
 		int sel;
+		StudentService service = new StudentService();
+		StudentView view = new StudentView();
+		Student student[] = null;
 		while(check) {
 			
+			System.out.println("1.학생     등록");
+			System.out.println("2.성적     입력");
+			System.out.println("3.성적     조회");
+			System.out.println("4.전체     조회");
+			System.out.println("5.프로그램 종료");
 			sel = sc.nextInt();
-			System.out.println("학생     등록");
-			System.out.println("성적     입력");
-			System.out.println("성적     조회");
-			System.out.println("전체     조회");
-			System.out.println("프로그램 종료");
-			
 			switch(sel) {
 				case 1:
 					System.out.println("학생    등록");
+					student = service.addStudent();
 					break;
 				case 2:
 					System.out.println("성적    입력");
+			
 					break;
 				case 3:
 					System.out.println("성적    조회");
+					
 					break;
 				case 4:
 					System.out.println("전체    조회");
+					view.view(student);
 					break;
 				case 5:
 					System.out.println("프로그램 종료");
