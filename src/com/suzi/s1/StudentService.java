@@ -29,7 +29,9 @@ public class StudentService {
 
 		return student;
 	}
-	
+
+	//매서드명은 addPoint
+	//내용 : 각 학생의 점수 입력
 	public void addPoint(Student [] student) {
 		Scanner sc = new Scanner(System.in);
 		for(int i=0; i<student.length;i++) { // length 학생의 수만큼
@@ -49,9 +51,10 @@ public class StudentService {
 		}
 		
 	}
-
-
-	
-	//매서드명은 addPoint
-	//내용 : 각 학생의 점수 입력
+	public void search(Student [] student) {
+		
+	}
+	//매서드명은 search
+	//내용 : 번호를 입력 받아서 학생 한명을 찾아서
+	//해당 출력은 StudentView class의 viewStudent메서드(
 }
