@@ -40,7 +40,7 @@ public class SchoolController {
 					break;
 				case 3:
 					System.out.println("학생   조회");
-					//view.search(student);
+					
 					break;
 				case 4:
 					System.out.println("전체    조회");
