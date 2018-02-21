@@ -61,7 +61,7 @@ public class Food_Main {
 		Shef_Steak shef = new Shef_Steak();
 		Food_Pasta pasta = new Food_Pasta();*/
 		
-		Menu order = new Menu();
+		Menu order = new Menu(); // 메뉴객체를 생성
 		order.order();
 	
 	}
